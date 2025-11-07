@@ -14,6 +14,8 @@ description: 5 Goals for a government to protect its people and society
 | **4. Evidence Over Experts**   | *Policies live or die by real-world results — not theories or lobbyists.* | **Left**: Anti-corporate capture. **Right**: Anti-bureaucracy. **Center**: Data > dogma.              | **Empirical Governance**          |
 | **5. Sustainable Liberty**     | *Maximum freedom — with automatic brakes when harm or waste is proven.*   | **Left**: Guardrails for climate/drugs. **Right**: Sunset clauses. **Center**: Freedom with feedback. | **Liberty with Circuit-Breakers** |
 
-> **Equity?** Only when **data proves it advances HLG #2** (e.g., progressive tax on scalable corporations funds HLG #2). **Never a goal.**  
-> **Assimilation?** A *natural outcome* of HLG #3 — not a headline.  
-> **Protection?** HLG #1 is **explicit** — government’s **first job**.
+
+### What about...
+> - **Equity?** Only when **data proves it advances HLG #2** (e.g., progressive tax on scalable corporations funds HLG #2). **Never a goal.**  
+> - **Assimilation?** A *natural outcome* of HLG #3 — not a headline.  
+> - **Protection?** HLG #1 is **explicit** — government’s **first job**.

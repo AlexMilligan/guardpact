@@ -14,12 +14,16 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'How to Integrate into US Law', slug: 'guides/how-to-integrate-guard-pact' },
 					],
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Explanation',
+					autogenerate: { directory: 'explanation' },
 				},
 			],
 		}),
