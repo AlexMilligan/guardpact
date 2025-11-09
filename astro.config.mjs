@@ -5,25 +5,31 @@ import mermaid from 'astro-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://guardpact.us',
 	integrations: [
 		starlight({
 			title: 'The Guard Pact',
 			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'How to Integrate into US Law', slug: 'guides/how-to-integrate-guard-pact' },
-					],
+					label: 'High-Level Goals',
+					autogenerate: { directory: '01-hlg' },
+				},
+				{
+					label: 'Essential Points',
+					autogenerate: { directory: '02-essential-points' },
+				},
+				{
+					label: 'State Labs',
+					autogenerate: { directory: '03-state-labs' },
 				},
 				{
 					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					autogenerate: { directory: '04-reference' },
 				},
 				{
-					label: 'Explanation',
-					autogenerate: { directory: 'explanation' },
+					label: 'Meta',
+					autogenerate: { directory: '05-meta' },
 				},
 			],
 		}),

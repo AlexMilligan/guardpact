@@ -111,7 +111,7 @@ This guide walks you through **exactly what to do** to make the **Guard Pact** t
 
 ---
 
-## Checklist (Copy-Paste)
+## Checklist
 
 - [ ] Draft Guard Pact Act  
 - [ ] Secure 5 sponsors  
