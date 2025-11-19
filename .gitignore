@@ -25,3 +25,6 @@ pnpm-debug.log*
 .firebase/
 *.firebase.log
 firebase-debug.log
+
+# Other
+x posting.md
