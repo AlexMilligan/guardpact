@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mermaid from 'astro-mermaid';
+import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,5 +35,6 @@ export default defineConfig({
 			],
 		}),
 		mermaid(),
+		robotsTxt(),
 	],
 });
