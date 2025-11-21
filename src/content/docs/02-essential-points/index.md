@@ -1,5 +1,5 @@
 ---
-title: Essential Points to Update Into Law
+title: "Essential Points to Update Into Law"
 description: 
 date: 2025-11-09
 ---

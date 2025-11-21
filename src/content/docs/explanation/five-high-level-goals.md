@@ -1,6 +1,6 @@
 ---
-title: The Five High-Level Goals of Government
-description: 5 Goals for a government to protect its people and society
+title: "The Five High-Level Goals of Government"
+description: "5 Goals for a government to protect its people and society"
 ---
 
 ## **THE 5 HIGH-LEVEL GOALS (HLGs)**  

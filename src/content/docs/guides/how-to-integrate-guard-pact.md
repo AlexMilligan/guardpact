@@ -1,6 +1,6 @@
 ---
-title: How to Integrate the Guard Pact into U.S. Law
-description: A practical, step-by-step guide to enact the Guard Pact at federal, state, and local levels.
+title: "How to Integrate the Guard Pact into U.S. Law"
+description: "A practical, step-by-step guide to enact the Guard Pact at federal, state, and local levels."
 layout: guide
 ---
 

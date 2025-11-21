@@ -1,6 +1,6 @@
 ---  
-title: Guard Pact Rollout Roadmap  
-description: 2026–2030 Phased Adoption with Circuit-Breakers  
+title: "Guard Pact Rollout Roadmap"
+description: "2026–2030 Phased Adoption with Circuit-Breakers"
 date: 2025-11-09  
 ---  
 

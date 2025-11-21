@@ -1,6 +1,6 @@
 ---
-title: 19 Points
-description: 19 Points to push for the sake of liberty
+title: "19 Points"
+description: "19 Points to push for the sake of liberty"
 ---
 
 ### **1. Universal School Choice**
