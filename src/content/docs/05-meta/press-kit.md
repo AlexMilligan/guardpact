@@ -1,5 +1,5 @@
 ---
 title: Press Kit
-subtitle: 
+description: 
 date: 2025-11-09
 ---

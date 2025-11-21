@@ -1,5 +1,5 @@
 ---
 title: Bibliography
-subtitle: 
+description: 
 date: 2025-11-09
 ---
