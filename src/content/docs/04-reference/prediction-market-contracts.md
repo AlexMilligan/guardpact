@@ -1,5 +1,5 @@
 ---
 title: "Prediction Market Contracts"
-description: 
+description: ""
 date: 2025-11-09
 ---

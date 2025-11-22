@@ -1,5 +1,5 @@
 ---
 title: "Circuit Breaker Catalog"
-description: 
+description: ""
 date: 2025-11-09
 ---
