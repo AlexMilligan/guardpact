@@ -1,7 +1,8 @@
 ---
 title: "How to Integrate the Guard Pact into U.S. Law"
 description: "A practical, step-by-step guide to enact the Guard Pact at federal, state, and local levels."
-layout: guide
+publishDate: 2024-07-26
+layout: '@/layouts/BlogPost.astro'
 ---
 
 This guide walks you through **exactly what to do** to make the **Guard Pact** the operating system of American governance — **without rewriting the Constitution from scratch**.
