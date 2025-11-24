@@ -1,0 +1,8 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/Guard Pact Logo.jpg';
+
+const { width, class: className } = Astro.props;
+---
+
+<Image src={logo} alt="Guard Pact Logo" {width} class={className} />

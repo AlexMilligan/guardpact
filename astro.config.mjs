@@ -30,6 +30,10 @@ export default defineConfig({
 					autogenerate: { directory: '04-reference' },
 				},
 				{
+					label: 'Blog',
+					link: '/blog',
+				},
+				{
 					label: 'Meta',
 					autogenerate: { directory: '05-meta' },
 				},
