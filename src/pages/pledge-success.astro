@@ -1,19 +1,19 @@
 ---
-title: Thank You, Guardian!
-description: You just joined thousands of Americans who are done with divisive ideology and ready for a government that actually protects, delivers fairness, and stays out of the way.
-layout: ../../layouts/BaseLayout.astro
----
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 import { Card, CardGrid } from '@astrojs/starlight/components';
-import GuardPactLogo from '../../components/GuardPactLogo.astro';
-import Confetti from '../../components/Confetti.astro';
+import GuardPactLogo from '../components/GuardPactLogo.astro';
+import Confetti from '../components/Confetti.astro';
 
+const url = new URL(Astro.request.url);
+const firstName = url.searchParams.get('firstName') || 'Guardian';
+---
+<BaseLayout title="Thank You, Guardian!" description="You just joined thousands of Americans who are done with divisive ideology and ready for a government that actually protects, delivers fairness, and stays out of the way.">
 <Confetti />
 
 <div class="success-hero">
   <GuardPactLogo width={200} class="mb-8" />
   
-  <h1>Thank you, {new URLSearchParams(Astro.url.search).get('name') || 'Guardian'}!</h1>
+  <h1>Thank you, {firstName}!</h1>
   
   <p class="big-lead">
     <strong>You are now officially a Guardian of the Guard Pact.</strong><br />
@@ -65,7 +65,7 @@ import Confetti from '../../components/Confetti.astro';
 
 <script>
   // Optional: pull live count from Netlify Forms API or a simple JSON endpoint you update manually
-  fetch('https://api.netlify.com/api/v1/forms/guard-pact-pledge/submissions?access_token=YOUR_TOKEN')
+  fetch('https://api.netlify.com/api/v1/forms/YOUR_FORM_ID/submissions?access_token=YOUR_ACCESS_TOKEN')
     .then(r => r.json())
     .then(data => {
       document.getElementById('live-count').textContent = data.length.toLocaleString();
@@ -99,3 +99,4 @@ import Confetti from '../../components/Confetti.astro';
   .btn-primary { background: #c41e3a; color: white; border-radius: 0.5rem; transition: background 0.2s; }
   .btn-primary:hover { background: #a0172e; }
 </style>
+</BaseLayout>
