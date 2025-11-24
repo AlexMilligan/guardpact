@@ -1,0 +1,101 @@
+---
+title: Thank You, Guardian!
+description: You just joined thousands of Americans who are done with divisive ideology and ready for a government that actually protects, delivers fairness, and stays out of the way.
+layout: ../../layouts/BaseLayout.astro
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import GuardPactLogo from '../../components/GuardPactLogo.astro';
+import Confetti from '../../components/Confetti.astro';
+
+<Confetti />
+
+<div class="success-hero">
+  <GuardPactLogo width={200} class="mb-8" />
+  
+  <h1>Thank you, {new URLSearchParams(Astro.url.search).get('name') || 'Guardian'}!</h1>
+  
+  <p class="big-lead">
+    <strong>You are now officially a Guardian of the Guard Pact.</strong><br />
+    Your name has been added to the public roll (First Name + Last Initial + State only).
+  </p>
+
+  <div class="badge">
+    <span class="number" id="live-count">…</span>
+    <span class="label">Guardians and counting</span>
+  </div>
+</div>
+
+<CardGrid stagger>
+  <Card title="🔥 What happens now" icon="rocket">
+    - Your pledge is live on the public counter at <a href="https://guardpact.us">guardpact.us</a><br />
+    - We’re building the biggest non-partisan, principle-driven coalition in America.<br />
+    - When we hit critical mass, every member of Congress and every 2028 presidential candidate will receive the Guard Pact with **your name** on it.
+  </Card>
+
+  <Card title="📣 Help us grow faster" icon="share">
+    <strong>One share = 3–5 new Guardians on average.</strong><br /><br />
+
+    <div class="share-buttons">
+      <a href={`https://twitter.com/intent/tweet?text=I just signed the Guard Pact — a no-BS plan to make government protect life, give every kid a fair shot, and follow one rulebook for all. Join me:&url=https%3A%2F%2Fguardpact.us&hashtags=GuardPact`}
+         target="_blank" class="share-btn twitter">Share on X / Twitter</a>
+
+      <a href={`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fguardpact.us`}
+         target="_blank" class="share-btn facebook">Share on Facebook</a>
+
+      <a href={`https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fguardpact.us`}
+         target="_blank" class="share-btn linkedin">Share on LinkedIn</a>
+    </div>
+
+    <p class="mt-4">
+      <strong>Or just copy this link:</strong><br />
+      <input type="text" value="https://guardpact.us" readonly class="copy-url" onclick="this.select()" />
+    </p>
+  </Card>
+
+  <Card title="🛡️ Stay in the fight" icon="envelope">
+    We send <strong>at most one email per month</strong> — only when something big happens (100k Guardians, congressional delivery, candidate endorsements, etc.).<br /><br />
+    You’re already subscribed if you gave us your email. You can unsubscribe anytime with one click.
+  </Card>
+</CardGrid>
+
+<div class="final-cta text-center">
+  <a href="/" class="btn-primary text-xl px-12 py-4">← Back to GuardPact.us</a>
+</div>
+
+<script>
+  // Optional: pull live count from Netlify Forms API or a simple JSON endpoint you update manually
+  fetch('https://api.netlify.com/api/v1/forms/guard-pact-pledge/submissions?access_token=YOUR_TOKEN')
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('live-count').textContent = data.length.toLocaleString();
+    })
+    .catch(() => {
+      document.getElementById('live-count').textContent = '10,000+';
+    });
+</script>
+
+<style>
+  .success-hero { text-align: center; max-width: 900px; margin: 0 auto 4rem; padding: 3rem 1rem; }
+  .success-hero h1 { font-size: 4rem; font-weight: 900; margin: 1.5rem 0; }
+  .big-lead { font-size: 1.5rem; line-height: 1.5; opacity: 0.9; }
+  .badge { margin: 3rem 0; font-size: 2rem; }
+  .number { font-size: 5rem; font-weight: 900; color: #c41e3a; display: block; }
+  .label { font-size: 1.5rem; opacity: 0.8; }
+
+  .share-buttons { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
+  .share-btn {
+    display: inline-block; padding: 0.75rem 1rem; border-radius: 0.5rem; color: white; font-weight: bold; text-decoration: none;
+  }
+  .twitter { background: #000; }
+  .facebook { background: #1877f2; }
+  .linkedin { background: #0a66c2; }
+
+  .copy-url {
+    width: 100%; max-width: 400px; padding: 0.75rem; text-align: center; border-radius: 0.5rem; border: 1px solid var(--sl-color-gray-5);
+  }
+
+  .final-cta { margin: 5rem 0; }
+  .btn-primary { background: #c41e3a; color: white; border-radius: 0.5rem; transition: background 0.2s; }
+  .btn-primary:hover { background: #a0172e; }
+</style>
