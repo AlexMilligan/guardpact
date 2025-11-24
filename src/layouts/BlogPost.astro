@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout title={frontmatter.title}>
-  <p>{frontmatter.description}</p>
-  <p>Published on: {frontmatter.publishDate.toDateString()}</p>
+  {frontmatter.description && <p>{frontmatter.description}</p>}
+  {frontmatter.publishDate && <p>Published on: {frontmatter.publishDate.toDateString()}</p>}
   <slot />
 </BaseLayout>

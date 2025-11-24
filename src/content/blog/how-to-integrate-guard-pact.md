@@ -1,7 +1,7 @@
 ---
 title: "How to Integrate the Guard Pact into U.S. Law"
 description: "A practical, step-by-step guide to enact the Guard Pact at federal, state, and local levels."
-publishDate: 2024-07-26
+publishDate: 2025-11-24
 layout: '@/layouts/BlogPost.astro'
 ---
 
