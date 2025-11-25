@@ -1,9 +1,5 @@
-# Dependencies
-/node_modules
-
-# Build artifacts
-/web-app/dist
-/web-app/.astro
+# node_modules
+node_modules
 
 # IDE and system files
 .vscode/
@@ -35,3 +31,5 @@ functions/lib
 
 # Web App
 web-app/node_modules
+web-app/dist
+web-app/.astro
