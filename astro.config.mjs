@@ -31,7 +31,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Blog',
-					link: '/blog',
+					autogenerate: { directory: 'blog' },
 				},
 				{
 					label: 'Meta',
