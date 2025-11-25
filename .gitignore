@@ -2,8 +2,8 @@
 /node_modules
 
 # Build artifacts
-/dist
-/.astro
+/web-app/dist
+/web-app/.astro
 
 # IDE and system files
 .vscode/
