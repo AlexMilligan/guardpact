@@ -44,4 +44,8 @@ export default defineConfig({
 		robotsTxt(),
 		sitemap(),
 	],
+	// server: {
+	// 	host: true,
+	// 	port: 9002,
+	// },
 });

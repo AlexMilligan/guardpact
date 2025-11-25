@@ -4,5 +4,20 @@
   "workspaces": [
     "web-app",
     "functions"
-  ]
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=web-app",
+    "start": "npm run start --workspace=web-app",
+    "build": "npm run build --workspace=web-app",
+    "preview": "npm run preview --workspace=web-app",
+    "astro": "npm run astro --workspace=web-app",
+    "deploy:hosting": "npm run deploy --workspace=web-app",
+    "build:functions": "npm run build --workspace=functions",
+    "serve:functions": "npm run serve --workspace=functions",
+    "shell:functions": "npm run shell --workspace=functions",
+    "start:functions": "npm run start --workspace=functions",
+    "deploy:functions": "npm run deploy --workspace=functions",
+    "logs:functions": "npm run logs --workspace=functions",
+    "deploy": "npm run deploy:hosting && npm run deploy:functions"
+  }
 }
