@@ -27,4 +27,11 @@ pnpm-debug.log*
 firebase-debug.log
 
 # Other
-x posting.md
+xtra/
+
+# Cloud Functions
+functions/node_modules
+functions/lib
+
+# Web App
+web-app/node_modules

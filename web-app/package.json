@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "npm run build && firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "latest",
+    "@astrojs/starlight": "latest",
+    "astro": "latest",
+    "astro-mermaid": "^1.1.0",
+    "astro-robots-txt": "latest",
+    "sharp": "^0.33.4"
+  }
+}

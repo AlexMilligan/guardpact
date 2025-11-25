@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guardpact.us/sitemap-index.xml
