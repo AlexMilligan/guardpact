@@ -9,7 +9,10 @@
     "rewrites": [
       {
         "source": "/api/pledge",
-        "function": "pledge"
+        "run": {
+          "serviceId": "pledge",
+          "region": "us-central1"
+        }
       }
     ]
   },
