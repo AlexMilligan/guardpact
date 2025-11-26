@@ -1,10 +1,10 @@
-import { https } from "firebase-functions";
+import { onRequest } from "firebase-functions/v2/https";
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
 initializeApp();
 
-export const pledge = https.onRequest(async (req, res) => {
+export const pledge = onRequest({ cors: true }, async (req, res) => {
   if (req.method !== "POST") {
     res.status(405).send("Method Not Allowed");
     return;

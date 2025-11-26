@@ -5,6 +5,15 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/pledge",
+        "function": "pledge"
+      }
     ]
+  },
+  "functions": {
+    "source": "functions"
   }
 }
