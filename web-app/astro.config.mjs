@@ -1,11 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import tailwindcss from '@tailwindcss/vite';
 import mermaid from 'astro-mermaid';
 import robotsTxt from 'astro-robots-txt';
 import sitemap from '@astrojs/sitemap';
-
-import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +14,9 @@ export default defineConfig({
   integrations: [
       starlight({
           title: 'The Guard Pact',
+          customCss: [
+            './src/styles/global.css'
+          ],
           social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/AlexMilligan/guardpact' }],
           sidebar: [
               {
@@ -46,7 +48,7 @@ export default defineConfig({
       mermaid(),
       robotsTxt(),
       sitemap(),
-	],
+    ],
 
   vite: {
     plugins: [tailwindcss()],
