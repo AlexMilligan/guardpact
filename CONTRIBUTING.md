@@ -1,6 +1,6 @@
 # Contributing to Guard Pact
 
-First off, thank you for considering contributing to Guard Pact. It's people like you that make this project a success. All contributors are expected to follow our [Code of Conduct](#code-of-conduct).
+First off, thank you for considering contributing to Guard Pact. It\'s people like you that make this project a success. All contributors are expected to follow our [Code of Conduct](#code-of-conduct).
 
 ## Development Goals
 
@@ -9,7 +9,7 @@ First off, thank you for considering contributing to Guard Pact. It's people lik
 
 ## Getting Started
 
-To get started with local development, you'll need to have Node.js and npm installed.
+To get started with local development, you\'ll need to have Node.js and npm installed.
 
 1.  **Clone the repository:**
     ```bash
@@ -30,7 +30,7 @@ We welcome contributions of all kinds, from bug reports to new features.
 
 *   **Bug Reports:** If you find a bug, please open an issue on our GitHub repository.
 *   **Feature Requests:** If you have an idea for a new feature, please open an issue to discuss it.
-*   **Pull Requests:** We welcome pull requests. Please ensure your code adheres to the project's coding standards.
+*   **Pull Requests:** We welcome pull requests. Please ensure your code adheres to the project\'s coding standards.
 
 ## Project Architecture
 
@@ -39,8 +39,9 @@ This is a **monorepo** project managed using npm workspaces.
 ### Workspaces
 
 1.  **`web-app` (Frontend):**
-    *   **Framework:** [Astro Starlight](https://starlight.astro.build/). Please reference Astro and Starlight documentation.
-    *   **Purpose:** The user-facing website. Content is in `web-app/src/content/docs`.
+    *   **Framework:** [Astro](https://astro.build/) with the [Starlight](https://starlight.astro.build/) theme.
+    *   **Purpose:** The user-facing website. The content is primarily located in `web-app/src/content/docs`.
+    *   **Significance:** Using Starlight is important because it provides a documentation-focused framework out of the box. This means that for most content contributions, you\'ll be working with Markdown (`.md`) or MDX (`.mdx`) files directly within the `web-app/src/content/docs` directory. Starlight automatically handles the site\'s navigation, search, and overall page layout, allowing you to focus on writing clear and well-structured content. While you can still build and use custom Astro components (located in `web-app/src/components`), understanding Starlight\'s file-based routing and conventions is key to contributing effectively.
     *   **Components:** Reusable Astro components are in `web-app/src/components`. Please create reusable components when possible.
 
 2.  **`functions` (Backend):**
