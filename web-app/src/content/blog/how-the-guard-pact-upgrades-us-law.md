@@ -3,7 +3,6 @@ title: "How the Guard Pact Upgrades U.S. Law"
 description: "Why the Guard Pact integrates seamlessly with the Constitution, courts, and federalism — with evidence."
 publishDate: 2025-11-24
 author: "Guard Pact"
-layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 # How the Guard Pact Upgrades U.S. Law  

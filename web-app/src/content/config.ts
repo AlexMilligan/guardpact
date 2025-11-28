@@ -15,7 +15,6 @@ const blogCollection = defineCollection({
     description: z.string(),
     author: z.string(),
     publishDate: z.date(),
-    layout: z.string(),
   }),
 });
 
