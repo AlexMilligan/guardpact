@@ -13,9 +13,12 @@
   "dependencies": {
     "@astrojs/sitemap": "latest",
     "@astrojs/starlight": "latest",
+    "@tailwindcss/vite": "^4.1.17",
     "astro": "latest",
     "astro-mermaid": "^1.1.0",
     "astro-robots-txt": "latest",
-    "sharp": "^0.33.4"
+    "astro-seo": "^0.8.4",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^4.1.17"
   }
 }
