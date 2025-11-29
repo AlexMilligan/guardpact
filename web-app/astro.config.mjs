@@ -17,7 +17,10 @@ export default defineConfig({
           customCss: [
             './src/styles/global.css'
           ],
-          social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/AlexMilligan/guardpact' }],
+          social: [
+            { icon: 'github', label: 'GitHub', href: 'https://github.com/AlexMilligan/guardpact' },
+            { icon: 'x.com', label: 'Twitter', href: 'https://twitter.com/guardpact' },
+          ],
           sidebar: [
               {
                   label: 'High-Level Goals',

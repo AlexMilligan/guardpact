@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+// Get all blog posts, excluding the index page.
+const posts = await getCollection('docs', ({ id }) => {
+  return id.startsWith('blog/') && id !== 'blog/index.mdx';
+});
+
+// Validate that each post has a publishDate.
+for (const post of posts) {
+  if (!post.data.publishDate) {
+    throw new Error(
+      `Blog post is missing a 'publishDate': "${post.id}".` +
+      ` Please add 'publishDate: YYYY-MM-DD' to its frontmatter.`
+    );
+  }
+}
+
+// Sort posts by publishDate. The validation above guarantees this field exists.
+const sortedPosts = posts.sort((a, b) => b.data.publishDate!.valueOf() - a.data.publishDate!.valueOf());
+---
+<CardGrid>
+	{sortedPosts.map(post => (
+		<LinkCard
+			title={post.data.title}
+			description={post.data.description}
+			href={`/${post.slug}`}
+		/>
+	))}
+</CardGrid>
