@@ -6,7 +6,7 @@ This project contains the web application and backend cloud functions for the Gu
 
 This project is a monorepo using npm workspaces.
 
--   `/web-app`: Contains the frontend Astro application.
+-   `/web-app`: Contains the frontend Astro application, including the content/blog.
 -   `/functions`: Contains the backend Firebase Cloud Functions written in TypeScript.
 -   `/firebase.json`: Configuration for Firebase services, including Hosting.
 -   `/package.json`: Defines the project workspaces and root-level scripts for orchestration.
