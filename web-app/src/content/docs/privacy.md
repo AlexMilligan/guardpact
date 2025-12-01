@@ -12,6 +12,10 @@ We respect your privacy. We only collect your first name and state to display on
 - **First Name & State:** To show public support for the Pact.
 - **Email Address:** To send you important updates.
 
+## Analytics
+
+To understand how our site is used and to improve it, we use Google Analytics. This service collects anonymous data about your visits, such as which pages you view and how long you stay. This information is processed in a way that does not personally identify anyone. We do not make, and do not allow Google to make, any attempt to find out the identities of those visiting our website.
+
 ## What We Don't Do
 
 - We **do not** sell or rent your personal information to third parties.
