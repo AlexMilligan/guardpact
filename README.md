@@ -1,5 +1,6 @@
-> ![NOTE]
-> Hi, Alex here. This project is mostly AI output as an experiment. I used a combination of Gemini + Grok to determine content and refine the few articles that exist. Please don't take this project too seriously, as it is not a reflection of my actual political values; heck, I didn't even read more than 10% of the article content it generated.
+> [!NOTE]
+> Hi, Alex here. This project is mostly AI output as an experiment. I used a combination of Gemini + Grok to determine content and refine the few articles that exist.
+> Please don't take this project too seriously, as it is not a reflection of my actual political values; heck, I didn't even read more than 10% of the article content it generated.
 
 # Guard Pact Project
 
