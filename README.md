@@ -2,6 +2,12 @@
 > Hi, Alex here. This project is mostly AI output as an experiment. I used a combination of Gemini + Grok to determine content and refine the few articles that exist.
 > Please don't take this project too seriously, as it is not a reflection of my actual political values; heck, I didn't even read more than 10% of the article content it generated.
 
+> [!IMPORTANT]
+> #### Why This is Difficult to Implement
+> The primary hurdle is that complexity is a political liability. Most voters prefer a clear "**villain**" (the other side) and a "**hero**" (their side). A systems-grounded approach often requires admitting that there are no easy villains, only poorly designed incentives.
+> 
+> This transition requires moving from a "**Moralizing**" framework to an "**Engineering**" framework. It asks the voter to stop being a fan of a team and start acting like a quality-control inspector.
+
 # Guard Pact Project
 
 This project contains the web application and backend cloud functions for the Guard Pact initiative.
